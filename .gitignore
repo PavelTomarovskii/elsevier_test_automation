@@ -1,0 +1,8 @@
+/target/
+.classpath
+
+### IntelliJ IDEA ###
+.idea
+.mvn
+*.iml
+**/target
