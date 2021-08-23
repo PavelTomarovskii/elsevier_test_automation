@@ -15,4 +15,6 @@ Feature: Testing possibility to add summer dresses to the shopping cart
     Given user click on button Check out
     When user click on button Proceed to checkout
     Then Authentication tab is opened
+    And Create an account button is available
+    And Sign in button is available
 

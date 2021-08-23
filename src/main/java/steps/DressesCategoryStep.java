@@ -115,7 +115,12 @@ public class DressesCategoryStep {
     }
 
     @And("^Create an account button is available$")
-    public void buttonIsAvailable() {
+    public void createAnAccountButtonIsAvailable() {
+        elementUtils.waitForElementToBeClickable(signInPage.createAnAccountButton, driver);
+    }
 
+    @And("^Sign in button is available$")
+    public void signInButtonIsAvailable() {
+        elementUtils.waitForElementToBeClickable(signInPage.signInButton, driver);
     }
 }
