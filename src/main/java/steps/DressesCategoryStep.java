@@ -69,7 +69,7 @@ public class DressesCategoryStep {
     public void isProductSuccessfullyAdded() {
         navigationUtils.slowDown(1000);
         boolean isAdded = false;
-        elementUtils.implicitlyWait(10, driver);
+        elementUtils.waitForElementToBeClickable(productCommonPage.continueShoppingButton, driver);
         WebElement productTitle = productCommonPage.getProductInfo("title", driver);
         String prodName = productTitle.getText();
         if (prodName.equals(productName)) {
